@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="240" viewBox="0 0 320 240">
+  <rect width="320" height="240" fill="#101820"/>
+
+  <rect x="0" y="0" width="320" height="30" fill="#172331"/>
+  <text x="14" y="20" fill="#f5f8fb" font-family="Arial, sans-serif" font-size="16" font-weight="700">PulseOX G07</text>
+  <circle cx="284" cy="15" r="5" fill="#42d6a4"/>
+  <text x="294" y="19" fill="#aebdca" font-family="Arial, sans-serif" font-size="10">BLE</text>
+
+  <rect x="12" y="42" width="142" height="72" rx="6" fill="#1d2a36" stroke="#26394a"/>
+  <text x="22" y="62" fill="#ff7d6e" font-family="Arial, sans-serif" font-size="15" font-weight="700">HR</text>
+  <text x="22" y="99" fill="#ffffff" font-family="Arial, sans-serif" font-size="42" font-weight="700">--</text>
+  <text x="106" y="98" fill="#aebdca" font-family="Arial, sans-serif" font-size="14">bpm</text>
+
+  <rect x="166" y="42" width="142" height="72" rx="6" fill="#1d2a36" stroke="#26394a"/>
+  <text x="176" y="62" fill="#42d6a4" font-family="Arial, sans-serif" font-size="15" font-weight="700">SpO2</text>
+  <text x="176" y="99" fill="#ffffff" font-family="Arial, sans-serif" font-size="42" font-weight="700">--</text>
+  <text x="270" y="98" fill="#aebdca" font-family="Arial, sans-serif" font-size="15">%</text>
+
+  <rect x="12" y="126" width="296" height="96" rx="6" fill="#0d141b" stroke="#26394a"/>
+  <text x="22" y="146" fill="#79d7ff" font-family="Arial, sans-serif" font-size="13" font-weight="700">PPG</text>
+
+  <g stroke="#243241" stroke-width="1">
+    <line x1="22" y1="158" x2="298" y2="158"/>
+    <line x1="22" y1="178" x2="298" y2="178"/>
+    <line x1="22" y1="198" x2="298" y2="198"/>
+    <line x1="60" y1="150" x2="60" y2="212"/>
+    <line x1="110" y1="150" x2="110" y2="212"/>
+    <line x1="160" y1="150" x2="160" y2="212"/>
+    <line x1="210" y1="150" x2="210" y2="212"/>
+    <line x1="260" y1="150" x2="260" y2="212"/>
+  </g>
+
+  <polyline
+    points="22,188 34,186 45,184 56,178 66,164 75,202 84,188 96,186 108,184 120,178 130,162 139,204 149,189 160,186 172,184 184,178 194,163 203,202 213,188 225,186 237,184 249,179 259,164 268,203 278,189 298,186"
+    fill="none"
+    stroke="#35c7f4"
+    stroke-width="3"
+    stroke-linejoin="round"
+    stroke-linecap="round"/>
+
+  <rect x="12" y="228" width="296" height="1" fill="#26394a"/>
+  <text x="14" y="238" fill="#718395" font-family="Arial, sans-serif" font-size="9">s0 waveform  n0 heart rate  n1 SpO2</text>
+</svg>

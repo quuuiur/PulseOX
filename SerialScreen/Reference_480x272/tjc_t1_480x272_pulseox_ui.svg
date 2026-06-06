@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="272" viewBox="0 0 480 272">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07141d"/>
+      <stop offset="1" stop-color="#102331"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#162938"/>
+      <stop offset="1" stop-color="#101d29"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="480" height="272" fill="url(#bg)"/>
+
+  <rect x="0" y="0" width="480" height="38" fill="#0b1b27"/>
+  <text x="18" y="25" fill="#f6fbff" font-family="Arial, sans-serif" font-size="20" font-weight="700">PulseOX Monitor</text>
+  <text x="214" y="25" fill="#7f97aa" font-family="Arial, sans-serif" font-size="13">MAX30102</text>
+  <circle cx="418" cy="19" r="6" fill="#34d399"/>
+  <text x="432" y="23" fill="#cfe7f3" font-family="Arial, sans-serif" font-size="13" font-weight="700">BLE</text>
+
+  <rect x="16" y="52" width="142" height="86" rx="8" fill="url(#panel)" stroke="#263d50"/>
+  <text x="30" y="77" fill="#ff746c" font-family="Arial, sans-serif" font-size="17" font-weight="700">HR</text>
+  <text x="30" y="124" fill="#ffffff" font-family="Arial, sans-serif" font-size="52" font-weight="700">--</text>
+  <text x="114" y="123" fill="#8ba2b6" font-family="Arial, sans-serif" font-size="15">bpm</text>
+
+  <rect x="174" y="52" width="142" height="86" rx="8" fill="url(#panel)" stroke="#263d50"/>
+  <text x="188" y="77" fill="#41d6a8" font-family="Arial, sans-serif" font-size="17" font-weight="700">SpO2</text>
+  <text x="188" y="124" fill="#ffffff" font-family="Arial, sans-serif" font-size="52" font-weight="700">--</text>
+  <text x="277" y="123" fill="#8ba2b6" font-family="Arial, sans-serif" font-size="17">%</text>
+
+  <rect x="332" y="52" width="132" height="86" rx="8" fill="url(#panel)" stroke="#263d50"/>
+  <text x="346" y="77" fill="#7dd3fc" font-family="Arial, sans-serif" font-size="16" font-weight="700">STATUS</text>
+  <text x="346" y="106" fill="#ffffff" font-family="Arial, sans-serif" font-size="22" font-weight="700">Ready</text>
+  <text x="346" y="126" fill="#8ba2b6" font-family="Arial, sans-serif" font-size="13">finger detected</text>
+
+  <rect x="16" y="152" width="448" height="102" rx="8" fill="#08131c" stroke="#263d50"/>
+  <text x="30" y="174" fill="#7dd3fc" font-family="Arial, sans-serif" font-size="15" font-weight="700">PPG WAVEFORM</text>
+  <text x="357" y="174" fill="#5f7588" font-family="Arial, sans-serif" font-size="12">50 points/s</text>
+
+  <g stroke="#1d3343" stroke-width="1">
+    <line x1="30" y1="187" x2="450" y2="187"/>
+    <line x1="30" y1="208" x2="450" y2="208"/>
+    <line x1="30" y1="229" x2="450" y2="229"/>
+    <line x1="78" y1="181" x2="78" y2="244"/>
+    <line x1="126" y1="181" x2="126" y2="244"/>
+    <line x1="174" y1="181" x2="174" y2="244"/>
+    <line x1="222" y1="181" x2="222" y2="244"/>
+    <line x1="270" y1="181" x2="270" y2="244"/>
+    <line x1="318" y1="181" x2="318" y2="244"/>
+    <line x1="366" y1="181" x2="366" y2="244"/>
+    <line x1="414" y1="181" x2="414" y2="244"/>
+  </g>
+
+  <polyline
+    points="30,219 42,217 54,215 65,210 75,196 84,239 93,220 105,217 117,215 129,210 139,194 148,240 158,220 170,217 182,215 194,210 204,195 213,239 223,220 235,217 247,215 259,210 269,195 278,239 288,220 300,217 312,215 324,210 334,195 343,239 353,220 365,217 377,215 389,210 399,195 408,239 418,220 430,217 450,215"
+    fill="none"
+    stroke="#29c7f2"
+    stroke-width="4"
+    stroke-linejoin="round"
+    stroke-linecap="round"/>
+
+  <rect x="0" y="263" width="480" height="9" fill="#08131c"/>
+  <text x="18" y="270" fill="#5f7588" font-family="Arial, sans-serif" font-size="8">TJC T1 4.3 480x272 layout: n0 HR | n1 SpO2 | s0 waveform</text>
+</svg>

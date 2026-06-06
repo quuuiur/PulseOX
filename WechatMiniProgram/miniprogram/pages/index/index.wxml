@@ -1,0 +1,68 @@
+<view class="page">
+  <view class="header">
+    <view class="title-block">
+      <text class="title">脉搏血氧仪</text>
+      <text class="device-name">{{deviceName}}</text>
+    </view>
+    <view class="status-pill {{isConnected ? 'status-on' : ''}}">
+      <view class="status-dot"></view>
+      <text>{{signalText}}</text>
+    </view>
+  </view>
+
+  <view class="metrics">
+    <view class="metric metric-spo2">
+      <view class="metric-ring">
+        <text class="metric-value">{{spo2}}</text>
+        <text class="metric-unit">%</text>
+      </view>
+      <text class="metric-label">血氧</text>
+    </view>
+
+    <view class="metric metric-heart">
+      <view class="metric-ring">
+        <text class="metric-value">{{heartRate}}</text>
+        <text class="metric-unit">bpm</text>
+      </view>
+      <text class="metric-label">心率</text>
+    </view>
+  </view>
+
+  <view class="toolbar">
+    <button wx:if="{{!isConnected}}" class="primary-button" loading="{{isScanning}}" bindtap="startScan">
+      {{isScanning ? '搜索中' : '连接设备'}}
+    </button>
+    <button wx:else class="secondary-button" bindtap="disconnect">断开连接</button>
+  </view>
+
+  <view class="status-line">
+    <text>{{statusText}}</text>
+    <text>时长 {{elapsedText}}</text>
+  </view>
+
+  <view class="wave-section">
+    <view class="wave-header">
+      <text>PPG 波形</text>
+      <text>数据 {{lastPacketText}}</text>
+    </view>
+    <canvas id="waveCanvas" canvas-id="waveCanvas" class="wave-canvas"></canvas>
+  </view>
+
+  <view wx:if="{{devices.length && !isConnected}}" class="device-list">
+    <view class="device-list-title">附近设备</view>
+    <view
+      wx:for="{{devices}}"
+      wx:key="deviceId"
+      class="device-row"
+      data-device-id="{{item.deviceId}}"
+      data-name="{{item.name}}"
+      bindtap="connectFromList"
+    >
+      <view class="device-info">
+        <text class="device-row-name">{{item.name}}</text>
+        <text class="device-row-id">{{item.deviceId}}</text>
+      </view>
+      <text class="device-rssi">{{item.rssi}}</text>
+    </view>
+  </view>
+</view>

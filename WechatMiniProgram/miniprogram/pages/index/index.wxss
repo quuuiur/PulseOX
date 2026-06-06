@@ -1,0 +1,227 @@
+page {
+  min-height: 100vh;
+  background: #f3f7f8;
+}
+
+.page {
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 48rpx 32rpx 64rpx;
+  color: #17313b;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32rpx;
+}
+
+.title-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 42rpx;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.device-name {
+  margin-top: 6rpx;
+  color: #6b8088;
+  font-size: 24rpx;
+}
+
+.status-pill {
+  display: flex;
+  align-items: center;
+  height: 56rpx;
+  padding: 0 18rpx;
+  border: 1rpx solid #d8e4e8;
+  border-radius: 8rpx;
+  background: #ffffff;
+  color: #6b8088;
+  font-size: 24rpx;
+}
+
+.status-on {
+  border-color: #bfece1;
+  color: #128066;
+}
+
+.status-dot {
+  width: 14rpx;
+  height: 14rpx;
+  margin-right: 10rpx;
+  border-radius: 50%;
+  background: #9aabb1;
+}
+
+.status-on .status-dot {
+  background: #19c79a;
+}
+
+.metrics {
+  display: flex;
+  margin-bottom: 28rpx;
+}
+
+.metric {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300rpx;
+  border: 1rpx solid #e1eaed;
+  border-radius: 16rpx;
+  background: #ffffff;
+}
+
+.metric + .metric {
+  margin-left: 24rpx;
+}
+
+.metric-ring {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  width: 200rpx;
+  height: 200rpx;
+  border: 10rpx solid #28cfa8;
+  border-left-color: #e2f7f1;
+  border-radius: 50%;
+}
+
+.metric-heart .metric-ring {
+  border-color: #377dff;
+  border-left-color: #e4edff;
+}
+
+.metric-value {
+  margin-top: 54rpx;
+  font-size: 56rpx;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.metric-unit {
+  margin-left: 6rpx;
+  color: #6b8088;
+  font-size: 22rpx;
+}
+
+.metric-label {
+  margin-top: 22rpx;
+  color: #526a73;
+  font-size: 26rpx;
+}
+
+.toolbar {
+  margin-bottom: 20rpx;
+}
+
+.primary-button,
+.secondary-button {
+  height: 88rpx;
+  border-radius: 12rpx;
+  font-size: 30rpx;
+  line-height: 88rpx;
+}
+
+.primary-button {
+  background: #18c7a3;
+  color: #ffffff;
+}
+
+.secondary-button {
+  border: 1rpx solid #cddce1;
+  background: #ffffff;
+  color: #2b4b57;
+}
+
+.status-line {
+  display: flex;
+  justify-content: space-between;
+  margin: 8rpx 2rpx 28rpx;
+  color: #6b8088;
+  font-size: 24rpx;
+}
+
+.wave-section {
+  padding: 24rpx;
+  border: 1rpx solid #e1eaed;
+  border-radius: 16rpx;
+  background: #ffffff;
+}
+
+.wave-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18rpx;
+  color: #526a73;
+  font-size: 24rpx;
+}
+
+.wave-canvas {
+  display: block;
+  width: 100%;
+  height: 360rpx;
+  border-radius: 8rpx;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.device-list {
+  margin-top: 28rpx;
+  border: 1rpx solid #e1eaed;
+  border-radius: 16rpx;
+  background: #ffffff;
+}
+
+.device-list-title {
+  padding: 22rpx 24rpx 14rpx;
+  color: #526a73;
+  font-size: 24rpx;
+}
+
+.device-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 96rpx;
+  padding: 14rpx 24rpx;
+  border-top: 1rpx solid #eef3f5;
+}
+
+.device-info {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  flex-direction: column;
+}
+
+.device-row-name {
+  overflow: hidden;
+  color: #17313b;
+  font-size: 28rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.device-row-id {
+  overflow: hidden;
+  margin-top: 4rpx;
+  color: #8fa0a6;
+  font-size: 20rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.device-rssi {
+  margin-left: 18rpx;
+  color: #6b8088;
+  font-size: 24rpx;
+}
